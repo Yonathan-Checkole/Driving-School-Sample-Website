@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SafeDrive Driving School</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      form {
+        text-align: left;
+        margin-left: 30%;
+      }
+
+      form * {
+        vertical-align: middle;
+      }
+
+      label {
+        display: inline-block;
+        width: 20%;
+      }
+
+      #email {
+        width: 35%;
+      }
+
+      #tel {
+        width: 15%;
+      }
+
+      input[type=submit] {
+        cursor: pointer;
+        width: 70%;
+        padding: 10px;
+        background: linear-gradient(to right, #747F80, #B5C5C6, #747F80);
+        color: var(--font-color);
+        border: none;
+        border-radius: 10px;
+      }
+
+      input, textarea {
+        margin: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="registration.html">Resources</a></li>
+          <li><a href="#" id="current">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <header>
+        <img
+          src="images/logo.png"
+          alt="Outline of a car with the text SafeDrive under it"
+        />
+        <div class="title">
+          <h1>Welcome to SafeDrive Driving School!</h1>
+          <h2>You drive, We teach</h2>
+        </div>
+      </header>
+      <main>
+        <h3>Contact us if you require more information</h2>
+        <form method="POST" action="submit.html">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          <br>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <br>
+          <label for="tel">Phone Number</label>
+          <input type="tel" id="tel" name="tel" required>
+          <br>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" cols="40"></textarea>
+          <br>
+          <input type="submit">
+        </form>
+      </main>
+      <footer>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <h2>Yonathan Checkole &#169; 2021</h2>
+      </footer>
+    </div>
+    <br><br><br>
+  </body>
+</html>

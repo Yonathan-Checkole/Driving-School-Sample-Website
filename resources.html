@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SafeDrive Driving School</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      main img {
+        width: 100%;
+      }
+
+      #larger {
+        font-size: larger;
+      }
+
+      main ul {
+        display: inline-block;
+        position: relative;
+        right: 2%;
+        list-style: none;
+        margin-top: 0;
+      }
+
+      main ul li {
+        cursor: pointer;
+        padding: 5px 3px;
+      }
+
+      main ul li a {
+        color: inherit;
+        padding: 5px 3px;
+      }
+
+      main ul li a:hover {
+        background-color: var(--webpage-background-color);
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="#" id="current">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <header>
+        <img
+          src="images/logo.png"
+          alt="Outline of a car with the text SafeDrive under it"
+        />
+        <div class="title">
+          <h1>Welcome to SafeDrive Driving School!</h1>
+          <h2>You drive, We teach</h2>
+        </div>
+      </header>
+      <main>
+        <h4>Select a part of the car you want to learn more about</h4>
+        <img
+          src="images/car-interior.jpg"
+          alt="The interior of a car with clickable options on the parts of the interior"
+          usemap="#carmap"
+        />
+        <map name="carmap">
+          <area
+            shape="circle"
+            coords="341,252,145"
+            alt="Steering Wheel"
+            href="wheel.html"
+          />
+          <area
+            shape="poly"
+            coords="525,393,598,357,722,405,663,453"
+            alt="Gearshift"
+            href="gear.html"
+          />
+          <area
+            shape="poly"
+            coords="104,520,342,434,236,363,67,429"
+            alt="Pedals"
+            href="pedal.html"
+          />
+          <area
+            shape="poly"
+            coords="436,127,488,221,485,315,562,294,577,223,524,121"
+            alt="Console"
+            href="console.html"
+          />
+          <area
+            shape="rect"
+            coords="500,1,661,33"
+            alt="Rear View Mirror"
+            href="mirror.html"
+          />
+          <area
+            shape="rect"
+            coords="711,78,772,126"
+            alt="Side Mirror"
+            href="mirror.html"
+          />
+        </map>
+
+        <h4><span id="larger">OR</span><br /><br />Choose a link</h4>
+        <ul>
+          <li><a href="wheel.html">Steering Wheel</a></li>
+          <li><a href="gear.html">Gearshift</a></li>
+          <li><a href="pedal.html">Brake & Gas Pedals</a></li>
+          <li><a href="console.html">Console</a></li>
+          <li><a href="mirror.html">Mirrors</a></li>
+        </ul>
+      </main>
+      <footer>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <h2>Yonathan Checkole &#169; 2021</h2>
+      </footer>
+    </div>
+    <br /><br /><br />
+  </body>
+</html>

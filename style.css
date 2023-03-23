@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+:root {
+  --webpage-background-color: #9cf8ff;
+  --font-color: #4e7c80;
+  --body-background-color: #e8fdff;
+  --nav-hover-color: #f7f7f7;
+  --nav-background-color: #bacbcc;
+}
+
+body {
+  color: var(--font-color);
+  background-color: var(--webpage-background-color);
+  width: 70%;
+  margin: auto;
+  font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+.wrapper {
+  background: var(--body-background-color);
+}
+
+header img {
+  position: absolute;
+  top: -10px;
+  left: 1px;
+  width: 150px;
+  height: 150px;
+}
+
+.title {
+  position: relative;
+  display: block;
+  text-align: center;
+  top: 30px;
+  z-index: 1;
+  padding: 10px;
+}
+
+nav {
+  position: fixed;
+  height: 5%;
+  right: 10%;
+  width: 80%;
+  z-index: 2;
+  background: linear-gradient(to right, #b5c5c6, #87a1a1, #b5c5c6);
+  border-radius: 0px 0px 20px 20px;
+}
+
+nav ul {
+  display: block;
+  list-style-type: disc;
+  list-style: none;
+  text-align: center;
+  margin: 4px;
+}
+
+nav ul li {
+  display: inline-block;
+  cursor: pointer;
+}
+
+nav ul li a {
+  color: var(--font-color);
+  padding: 0px 35px;
+  font-size: larger;
+}
+
+nav ul li:hover {
+  background-color: var(--nav-hover-color);
+  border-radius: 10px;
+}
+
+#current {
+  font-weight: bolder;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+main {
+  text-align: center;
+  position: relative;
+  padding: 0px 100px;
+  top: 30px;
+  background-color: var(--body-background-color);
+}
+
+footer {
+  position: relative;
+  top: 25px;
+  width: 100%;
+  height: 25px;
+  background: linear-gradient(to right, #b5c5c6, #87a1a1, #b5c5c6);
+  margin-top: 10px;
+  border-radius: 0px 0px 20px 20px;
+  font-size: small;
+}
+
+footer h2 {
+  position: relative;
+  margin: 0px;
+  float: right;
+  display: inline;
+  right: 10px;
+}
+
+footer ul {
+  display: inline;
+  float: left;
+  list-style-type: disc;
+  list-style: none;
+  text-align: left;
+  margin: 4px;
+}
+
+footer ul li {
+  display: inline;
+  cursor: pointer;
+}
+
+footer ul li a {
+  color: var(--font-color);
+  padding: 0px 5px;
+  font-size: larger;
+}
+
+footer ul li:hover {
+  background-color: var(--nav-hover-color);
+  border-radius: 10px;
+}
